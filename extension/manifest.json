@@ -1,0 +1,23 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "./image/icon_128.png",
+         "32": "./image/icon_32.png"
+      }
+   },
+   "options_page": "./options/options.html",
+   "background": {
+      "service_worker": "background.js",
+      "type": "module"
+   },
+   "name": "Block Access Site",
+   "description": "Blocks access to sites to increase your productivity.",
+   "icons": {
+	 "128": "./image/icon_128.png",
+	 "32": "./image/icon_32.png"
+   },
+   "permissions": [ "webNavigation", "storage", "alarms" ],
+   "minimum_chrome_version": "92",
+   "manifest_version": 3,
+   "version": "1.0.1"
+}
