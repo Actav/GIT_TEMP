@@ -1,0 +1,11 @@
+{
+   "appDesc": {
+      "message": "Block any host to keep working on your main tasks"
+   },
+   "appName": {
+      "message": "Site Blocker"
+   },
+   "popupTitle": {
+      "message": "Host Blacklist"
+   }
+}

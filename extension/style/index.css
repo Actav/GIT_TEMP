@@ -1,0 +1,163 @@
+@keyframes blur {
+    0%,
+    90% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+    }
+
+    50% {
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+    }
+}
+
+:root {
+    --height: 482px;
+    --width: 348px;
+}
+
+body {
+    height: var(--height);
+    width: var(--width);
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: #27187e;
+    line-height: 1;
+    color: #fff;
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.punk_class {
+    animation: blur 4s ease 0.5s;
+}
+
+tbody {
+    height: 350px;
+    overflow-y: auto;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+tbody td {
+    padding: 10px 0 10px 10px;
+    border-bottom: 1px solid #fff;
+}
+
+tbody td:first-child {
+    padding-left: 0;
+}
+
+thead,
+tbody {
+    display: block;
+}
+
+input {
+    border: none;
+    border-radius: 4px;
+    padding: 5px 15px;
+    outline: none;
+    font-size: 16px;
+    width: 60%;
+}
+
+button {
+    background: #ff8600;
+    color: #212126;
+    font-weight: bold;
+    padding: 5px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+    outline: none;
+    margin-left: 10px;
+}
+
+#konownInde {
+    text-align: center;
+    color: #f1f2f6;
+}
+
+.panMetna {
+    width: 22px;
+    height: 22px;
+    background-color: coral;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container {
+    padding: 10px;
+    width: 100%;
+}
+
+.url {
+    overflow: hidden;
+    max-width: 142px;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+}
+
+#ifMtea {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.dinger {
+    margin-bottom: 2%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.row label {
+    color: #fff;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.row input {
+    margin: 0;
+    width: unset!important;
+    color: #758bfd;
+}
+
+#ifMtea tbody {
+    animation: append-animate .3s linear;
+}
+
+@keyframes append-animate {
+	from {
+		transform: scale(0);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;	
+	}
+}
